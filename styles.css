@@ -3,7 +3,7 @@
 	background: lightgreen;
 	display: flex;
 	width: 100%;
-    height: 100vh;
+    height:calc(100vh - 16px);
 }
 .controls{
 	display: flex;
@@ -13,17 +13,18 @@
 .photo-main{
 	background-color: #ddb907;
     padding: 14px;
+	border-radius:12px 12px  0px 0px;
 }
 .photo-main img{
-	width: 130px;
-    height: 130px;
+	width: 200px;
+    height: 200px;
     position: relative;
-    right: 50px;
+    right: 70px;
 }
 .photo-album ul{
 	display: flex;
     list-style: none;
-    padding: 0;
+    padding: 0 10px 0 0;
 	display:flex;
 	justify-content:end;
 }
@@ -35,6 +36,8 @@
 .photo-container{
 	background: white;
 	box-shadow: 0 10px 10px 0 gray;
+    width: 170px;
+    border-radius: 12px;
 }
 .product__info{
     background: white;
@@ -43,15 +46,15 @@
     margin: auto;
 	justify-content: end;
     display: grid;
-	padding:10px;
+	padding: 24px 12px;
 	position:relative;
-;
+	border-radius:12px;
 }
 .product__photo{
 	position: absolute;
     z-index: 1;
-    top: 20%;
-    left: 40px;
+    top: 18%;
+    left: 18%;
 }
 .title h1{
 	margin: 10px 0 0 0;
@@ -90,4 +93,14 @@
 }
 .description ul li{
 	font-size:12px;
+}
+button{
+	background-color: red;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    outline: none;
+    border: none;
+    width: 120px;
+    border-radius: 8px;
 }
